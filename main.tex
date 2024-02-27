@@ -1,0 +1,287 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Ajay Gaur}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large DevOps Enthusiast} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{https://www.ajaygaur.site}{ajaygaur.site}}\\ 
+    \icon{Phone}{11}{8888016948}\\
+    \icon{MapMarker}{11}{Pune MH, India}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:ajay94932@gmail.com}{ajay94932@gmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/iamajaygaur}{github.com/iamajaygaur}}\\
+    \icon{LinkedinSquare}{11}{\href{www.linkedin.com/in/iamajaygaur}{linkedin.com/in/iamajaygaur}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+    Motivated and adaptable entry-level DevOps enthusiast with a foundation in software development and IT operations. Proficient in version control, scripting, and CI/CD concepts, bringing a collaborative mindset and problem-solving skills to streamline software delivery processes. Driven to enhance software delivery with a thirst for continuous learning in fast-paced environments.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.3\textwidth}
+        \textbf{Language}
+    \end{minipage}
+    \begin{minipage}[t]{0.1\textwidth}
+        \textbf{:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Basic Python, HTML, CSS, C, Shell  
+    \end{minipage}
+    
+    \begin{minipage}[t]{0.3\textwidth}
+        \textbf{Cloud Services}       
+    \end{minipage}
+    \begin{minipage}[t]{0.1\textwidth}
+        \textbf{:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      AWS, Azure
+    \end{minipage}
+
+    \begin{minipage}[t]{0.3\textwidth}
+        \textbf{SCM Repository }
+    \end{minipage}
+    \begin{minipage}[t]{0.1\textwidth}
+        \textbf{:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Github, Git
+    \end{minipage}
+
+
+    \begin{minipage}[t]{0.3\textwidth}
+        \textbf{Build, IAC Tools}
+    \end{minipage}
+    \begin{minipage}[t]{0.1\textwidth}
+        \textbf{:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Maven, Gradle, Terraform, Ansible
+    \end{minipage}
+    
+    \begin{minipage}[t]{0.3\textwidth}
+        \textbf{CI/CD Pipeline}
+    \end{minipage}
+     \begin{minipage}[t]{0.1\textwidth}
+        \textbf{:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Jenkins
+    \end{minipage}
+
+    \begin{minipage}[t]{0.3\textwidth}
+        \textbf{Containerization}
+    \end{minipage}
+    \begin{minipage}[t]{0.1\textwidth}
+        \textbf{:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Docker, Kubernetes. EKS, Swarm
+    \end{minipage}
+
+    \begin{minipage}[t]{0.3\textwidth}
+        \textbf{Monitoring Tools}
+    \end{minipage}
+    \begin{minipage}[t]{0.1\textwidth}
+        \textbf{:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Prometheus, Grafana
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{DevSecOps}
+		{Netflix Clone App using Agro CD, Sonarqube, Helm, Jenkins, k8s and Trivy \vspace{-8 pt}}                   
+		{\href{https://github.com/iamajaygaur/netflix-DevSecOps-CICD.git}{iamajaygaur/netflix-DevSecOps-CICD}}
+            {
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
+                    \item Deploy a Netflix clone application on cloud infrastructure.
+                    \item Utilize Jenkins for continuous integration and deployment (CI/CD) within a DevSecOps framework.
+                    \item Automate deployment processes while embedding security measures.
+                    \item Establish a secure and efficient deployment pipeline for seamless application updates.
+                \end{itemize}
+            }
+    \entry
+		{DevSecOps}
+		{Zomato Clone App using Jenkins, k8s, Docker, Sonarqube, and OWASP \vspace{-8 pt}}
+		{\href{https://github.com/iamajaygaur/zomato-DevSecOps-CICD.git}{iamajaygaur/zomato-DevSecOps-CICD}}
+		{
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
+                    \item Deploy the Zomato app on cloud infrastructure using Jenkins and Docker.
+                    \item Set up cloud instances, install necessary tools/plugins, and create a Jenkins Pipeline for automation.
+                    \item Integrate security measures throughout the deployment process.
+                    \item Build and push Docker images, deploy the Zomato app, and optimize resource usage for efficiency.
+                \end{itemize}
+            }
+	\entry
+		{DevOps}
+		{Healthcare Application using Docker, Jenkins, k8s, Prometheus, Grafana and Maven \vspace{-8 pt}}
+		{\href{https://github.com/iamajaygaur/BankingApp.git}{iamajaygaur/BankingApp}}
+		{
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
+                    \item Complex builds, manual testing, incremental build management and manual infrastructure.
+                    \item Maintains the configuration continuous monitoring in software development.
+                    \item Leveraged Jenkins, Docker, and CI/CD pipeline and successful deployment of Healthcare App on cloud.
+                \end{itemize}
+            }
+    \entry
+		{DevOps}
+		{Banking Application using Jenkins, Docker, Terraform, k8s, Prometheus and Grafana \vspace{-8 pt}}
+		{\href{https://github.com/iamajaygaur/healthcare.git}{iamajaygaur/healthcare}}
+		{
+                \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
+                    \item This project tackled challenges in building and managing a complex monolithic application and manual testing.
+                    \item Maintains the configuration continuous monitoring in software development.
+                    \item Leveraged Jenkins, Docker, and CI/CD pipeline and successful deployment of Banking App on cloud.
+                \end{itemize}
+            }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{6/2020 - 7/2023}
+		{Bachelor of Engineering - Computer Engineering}
+		{CGPA - 8.88}
+		{RMD Sinhgad School of Engineering, Pune}
+    \entry
+		{6/2017 - 6/2020}
+		{Diploma in Computer Engineering}
+		{Percentage - 89.66}
+        {Marathwada Mitra Mandal’s Polytechnic, Pune}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+    \entry
+        {9/2023 - 2/2024}
+		{DevOps Trainee (Course)}
+		{StarAgile, Banglore}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Gain hands-on experience cloud computing platforms such as AWS and its Services.
+            \item Participated in training sessions to learn DevOps methodologies, tools, and technologies and worked with version control systems 
+                  such as Git and Github to manage code repositories.
+            \item Learnt the design, implementation, and maintenance of continuous integration and continuous delivery pipelines.
+            \item Gain hands-on experience with configuration management tools such as Ansible and Terraform.
+            \item Learn to implement security best practices in DevOps processes and tools.
+        \end{itemize} 
+        \texttt{AWS} \slashsep \texttt{Kubernetes} \slashsep \texttt{Docker} \slashsep \texttt{Anisble} \slashsep \texttt{Jenkins CI/CD} \slashsep \texttt{Github and Git} \slashsep \texttt{Kubernetes} \slashsep \texttt{Promethues} \slashsep \texttt{Grafana} \slashsep \texttt{Maven} \slashsep \texttt{Terraform} \slashsep \texttt{CI/CD Pipeline} \slashsep \texttt{Linux}}
+	\entry
+        {7/2021 -- 7/2021}
+		{Web Development and Django Intern}
+		{Elite Softwares, Pune}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Front End Development of static website using Development tools.
+            \item Template Editing and Design Layout Development, building Website from template with Bootstrap.
+            \item Implemented a website with the payment gateway integration button with the help of Razor pay.
+        \end{itemize} 
+        \texttt{HTML} \slashsep \texttt{CSS} \slashsep \texttt{Bootstrap} \slashsep \texttt{Python} \slashsep \texttt{Django Framework}\slashsep \texttt{PyCharm}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Certification}
+    \vspace{-15pt}
+        \begin{multicols}{2}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=2.8cm]
+			 \item DevOps Certified - StarAgile 
+			 \item Microsoft Azure Fundamentals - AZ900
+			 \item Explore Core Data Concepts in Microsoft Azure
+			 \item AWS - Cloud Foundation
+			 \item NDG - Linux Essentials and Unhatched
+			 \item PCAP: Programming Essential in Python
+			 \item IIT Bombay Spoken Tutorial Certified JAVA, CPP, C and PYTHON Language
+		\end{itemize}
+	\end{multicols}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
