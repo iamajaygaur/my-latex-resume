@@ -1,3 +1,3 @@
 # my-latex-resume
 
-![Alt Text](./DevSecOps.png)
+![Alt Text](./resume.jpg)
